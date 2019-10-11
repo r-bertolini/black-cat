@@ -9,8 +9,18 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
             'if (elem === null) {' +
                 'var style = document.createElement("style");' +
                 'style.setAttribute("id", "5oLVMexlQNYUMMmO");' +
-                'style.setAttribute("color", "black");' +
-                'style.innerHTML = "123";' +
+                'style.setAttribute("media", "screen");' +
+                'style.innerHTML = "html:before {' +
+                        'content: \' \'; ' +
+                        'z-index: 100000000000000; ' +
+                        'pointer-events: none; ' +
+                        'position: fixed; ' +
+                        'left: 0; ' +
+                        'top: 0; ' +
+                        'width: 100%; ' +
+                        'height: 100%; ' +
+                        'background-color: rgba(0, 0, 0, 0.15); ' +
+                    '}";' +
                 'document.documentElement.appendChild(style);' +
             '}' +
         '}'
